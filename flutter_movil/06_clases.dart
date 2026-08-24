@@ -24,8 +24,6 @@ class Hero {
 
   
   @override
-  String toString() {
-    return '$name - $power';
-  }
+ b    
 
 }

@@ -40,11 +40,11 @@ class Hero {
   //
   // To fix this, we use an initializer list to assign values to the fields
   // directly.
-  Hero.fromJson(Map<String, dynamic> json) : 
-    name = json['name'] ?? 'No name found',
-    power = json['power'] ?? 'Power not found',
-    isAlive = json['isAlive'] ?? false;
-    
+  Hero.fromJson(Map<String, dynamic> json)
+    : name = json['name'] ?? 'No name found',
+      power = json['power'] ?? 'Power not found',
+      isAlive = json['isAlive'] ?? false;
+
   @override
   String toString(){
     return '$name, $power, isAlive: ${ isAlive ? 'YES!' : 'Nope' }';
